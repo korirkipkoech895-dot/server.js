@@ -16,7 +16,7 @@ const receiptsFile = path.join(__dirname, "receipts.json");
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: "https://swiftloanlimited2.onrender.com"
+    origin: "https://swift-xlrf.onrender.com"
   })
 );
 
@@ -59,8 +59,8 @@ app.post("/pay", async (req, res) => {
       phone_number: formattedPhone,
       external_reference: reference,
       customer_name: "Customer",
-      callback_url: "https://backendstkpush.onrender.com/callback",
-      channel_id: "000222"
+      callback_url: "https://server-4d6l.onrender.com/callback",
+      channel_id: "000259"
     };
 
     const url = "https://swiftwallet.co.ke/pay-app-v2/payments.php";
